@@ -1,0 +1,75 @@
+
+.select select {
+	opacity: 1;
+
+
+}
+
+.select .select-active, input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="tel"], select {
+	position: relative;
+	display: block;
+	width: 100% !important;
+	max-width: 519px;
+
+	margin: 0 auto;
+
+	line-height: 30px;
+	text-align: center;
+
+border-radius: 500px;
+border: 1px solid #e5e5e5;
+background: #f4f4f4;
+	font-family: 'Alice', sans-serif;
+}
+
+select {
+	-webkit-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none !important;
+	-moz-appearance: none;
+	text-align-last: center;
+}
+
+.select .select-active, select {
+	background: #edf4fa url(../images/select.png) no-repeat center right 20px;
+	cursor: pointer;
+}
+
+option {
+	background: #fcfcfe;
+}
+
+.select .select-sub {
+	position: absolute;
+	display: none;
+	width: 100%;
+	max-width: 519px;
+	top: 56px;
+	background: #fcfcfe;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	max-height: 328px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.select .select-sub a {
+	position: relative;
+	display: block;
+	width: calc(100% - 20px);
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	text-align: center;
+	margin: 0 auto;
+}
+
+.select .select-sub a:first-child {
+	border-top: none;
+}
+
+.select .select-sub a.active, .select .select-sub a:hover {
+	background: #f4f4f4;
+}

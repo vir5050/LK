@@ -1,0 +1,843 @@
+/* 
+=============================================================
+This Skin for STRESS WEB Developed by S.T.R.E.S.S.
+
+File 'engine.css' - Cascading Style Sheet (CSS) Document
+
+Этот файл требуется для каждого шаблона 
+=============================================================
+*/
+#error, .error { text-align: center; color: red; font-size: 12px; padding: 10px 0px; }
+#noerror, .noerror { text-align: center; color: green; font-size: 12px; padding: 10px 0px; }
+.button { margin: 15px 0px 5px 10px; background: #333; color: #ffffff; }
+.captcha { height: 22px; }
+#mysqlerror { border: 3px double; } 
+.tdLeft { text-align: left; padding: 5px 0px 5px 10px; width: 60%; font-family: TimesNewRomanBold; }
+.tdRight { text-align: right; padding: 5px 10px 5px 0px; width: 40%; }
+.tabForm .input { width: 120px; border: 1px solid #999; }
+.tabForm p { font-size: 14px; font-family: TimesNewRomanBold; padding: 15px 0px 20px 0px; }
+.description { font-size: 10px; font-weight: normal; }
+.descript { padding: 10px; font-size: 11px; font-weight: normal; text-align: justify; }
+.swc { font-size: 9px; font-family: Verdana; font-style: italic; }
+.swc a { font-size: 10px; font-family: Verdana; font-style: italic; }
+/***************************
+* ОПРОС НА САЙТЕ
+***************************/
+#poll {margin-bottom: 20px; padding: 0 5px;}
+#poll .ptitle {
+	text-align: left;
+	font-family: TimesNewRomanBold;
+	padding: 5px 1px 5px 10px;
+}
+#poll .pradio {
+	padding-left: 5px;
+}
+#poll .panswer {
+	padding-left: 5px;
+}
+#poll .pprogress {
+	padding-left: 5px;
+}
+#poll .pbuttons {
+	text-align: center;
+}
+#poll .pvote {
+	font-size: 12px;
+}
+#poll .presult {
+	font-size: 10px;
+}
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+.content-page-title {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #534d55;
+	font-size: 24px;
+	line-height: 18px;
+	font-family: 'Russo One', sans-serif;
+	margin: 0 auto 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.content-page-title span {
+	color: #b73835;
+}
+
+.content-page-form {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 519px;
+	margin: 0 auto;
+}
+
+.content-page-form form,
+.content-page-form table,
+.content-page-form table tbody,
+.content-page-form table tbody tr,
+.content-page-form table tbody tr td {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content-page-form br {
+	display: none;
+}
+
+.content-page-form label {
+	position: relative;
+	display: block;
+	margin: 10px auto  5px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.content-page-form .item {
+	position: relative;
+	display: block;
+	margin: 0 auto 4px;
+}
+
+.content-page-form .item .smart_l2sec_code {
+	position: absolute;
+	display: inline-block;
+	z-index: 1;
+	top: 0;
+	left: 15px;
+	height: 22px;
+	bottom: 0;
+	margin: auto;
+}
+
+.content-page-btn {
+padding: 7px 15px 7px 15px;
+color:
+#fff;
+border-radius: 50px;
+background: linear-gradient(to top,
+#e55454,
+#f57171);
+box-shadow: 0 0 10px
+rgb(248, 117, 117);
+cursor: pointer;
+font-size: 18px;
+font-family: Roboto Bold;
+text-transform: uppercase;
+display: block;
+margin: 20px auto 0;
+}
+
+.content-page-btn:hover {
+	-webkit-filter: contrast(155%);
+	-moz-filter: contrast(155%);
+	-o-filter: contrast(155%);
+	filter:contrast(155%);
+}
+
+.smart-btn-forget {
+	position: relative;
+	display: table;
+	margin: 15px auto 0;
+}
+
+.smart-btn-forget:hover {
+	text-decoration: underline;
+}
+
+.content-page-list {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto 10px;
+	text-align: center;
+}
+
+.content-page-list li {
+	position: relative;
+	display: inline-block;
+}
+
+.content-page-list a {
+	position: relative;
+	display: inline-block;
+	width: 151px;
+	height: 39px;
+	text-align: center;
+	line-height: 39px;
+	color: #fff;
+	font-size: 11px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	margin: 0 5px 7px;
+}
+
+.content-page-list a:hover, .content-page-list a.activ {
+	-webkit-filter: contrast(155%);
+	-moz-filter: contrast(155%);
+	-o-filter: contrast(155%);
+	filter:contrast(155%);
+}
+
+.content-page-list a span {
+	position: relative;
+	display: block;
+}
+
+.content-page-list a:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 151px;
+	height: 39px;
+	background: url(../images/btn-min.png) no-repeat;
+	top: 0;
+	left: 0;
+	-webkit-transition:all 0.3s ease; 
+	-o-transition:all 0.3s ease; 
+	-moz-transition:all 0.3s ease; 
+	transition:all 0.3s ease;
+}
+
+.content-page-list a:hover:before, .content-page-list a.activ:before {
+	-webkit-filter: contrast(155%);
+	-moz-filter: contrast(155%);
+	-o-filter: contrast(155%);
+	filter:contrast(155%);
+}
+
+.content-page-table-inner {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	background: #fff;
+}
+
+.content-page-table-inner tr {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.l2title {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 14px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	background: #e14817;
+	padding: 12px 0;
+	text-align: center;
+}
+
+.content-page-table-inner tr td.page-rait {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-family: 'Russo One', sans-serif;
+	padding: 5px 0;
+}
+
+.content-page-table-inner tr td.l2left {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 49.8%;
+	font-size: 14px;
+	font-family: 'Russo One', sans-serif;
+	padding: 10px 0;
+	padding-right: 0.2%;
+	text-align: right;
+	border-bottom: 1px solid #e14817;
+}
+
+.content-page-table-inner tr td.l2right {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 49.8%;
+	font-size: 14px;
+	font-family: 'Russo One', sans-serif;
+	padding: 10px 0;
+	padding-left: 0.2%;
+	text-align: left;
+	border-bottom: 1px solid #e14817;
+}
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+#sexchar, #charname {
+	text-align: center;
+}
+
+#alpha {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 15px auto 5px;
+	text-align: center;
+}
+
+#alpha a {
+	position: relative;
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+	background: url(../images/btn-alfa.png) no-repeat;
+	line-height: 39px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Russo One', sans-serif;
+	margin: 0 2px 4px;
+}
+
+#alpha a:hover {
+	-webkit-filter: contrast(155%);
+	-moz-filter: contrast(155%);
+	-o-filter: contrast(155%);
+	filter:contrast(155%);
+}
+
+#swdelete {
+	position: relative;
+	display: table;
+	width: 151px;
+	height: 39px;
+	text-align: center;
+	line-height: 39px;
+	color: #fff;
+	font-size: 11px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	margin: 10px auto;
+	background: url(../images/btn-min.png) no-repeat;
+}
+
+#swdelete:hover {
+	-webkit-filter: contrast(155%);
+	-moz-filter: contrast(155%);
+	-o-filter: contrast(155%);
+	filter:contrast(155%);
+}
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/***************************
+* page lister
+***************************/
+#pager {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+    display: block;
+    position: relative;
+}
+#pager a {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: #8d9398;
+	background: rgba(255,255,255,0.1);
+}
+#pager a:hover {
+	background: rgba(255,255,255,0.25);
+	color: #fff;
+}
+#pager a.nopager {
+	background: rgba(255,255,255,0.25);
+	color: #fff;
+}
+/***************************
+* Statistic
+***************************/
+#l2top {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+	text-align: center;
+}
+
+#l2top th {
+	color: #fff;
+	font-size: 14px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	background: #e14817;
+	padding: 12px 0;
+	font-weight: normal;
+}
+
+#l2top th.name,
+#l2top td.name {
+	text-align: left;
+}
+
+#l2top td {
+	font-size: 13px;
+	font-family: 'Russo One', sans-serif;
+	padding: 10px 0;
+	border-bottom: 1px solid #e14817;
+}
+
+#l2top td.name span.male,
+#l2top td.name span.female {
+	font-size: 15px;
+}
+
+#l2top td.name a {
+	color: #271c2a;
+}
+
+#l2top td.name small {
+	color: #e14817;
+	font-size: 10px;
+}
+
+#l2top td a:hover {
+	text-decoration: underline;
+}
+/***************************
+* Таблица с замками
+***************************/
+#l2castle {
+	width: 100%;
+	text-align: left;
+	font-size: 11px;
+	font-family: 'Russo One', sans-serif;
+	background: #fff;
+}
+
+#l2castle b {
+	font-family: 'Russo One', sans-serif;
+	font-weight: normal;
+}
+
+#l2castle td.l2left {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 49.5%;
+	font-size: 14px;
+	font-family: 'Russo One', sans-serif;
+	padding: 10px 0;
+	padding-right: 0.5%;
+	text-align: right;
+	border-bottom: 1px solid #e14817;
+	height: 123px;
+}
+
+#l2castle td.l2right {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 49.5%;
+	font-size: 14px;
+	font-family: 'Russo One', sans-serif;
+	padding: 10px 0;
+	padding-left: 0.5%;
+	text-align: left;
+	border-bottom: 1px solid #e14817;
+	height: 123px;
+    line-height: 18px;
+}
+/***************************
+* cabinet
+***************************/
+#l2 {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#l2 tbody {
+	background: #fff;
+}
+
+#l2 thead tr th {
+	border-bottom: 1px solid #fff;
+}
+
+#l2 thead tr:first-child th {
+	background: none;
+	color: #534d55;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: 'Russo One', sans-serif;
+	border-bottom: none;
+}
+
+#l2 thead tr th b {
+	font-weight: normal;
+	font-family: 'Russo One', sans-serif;
+	color: #b73835;
+}
+
+#l2 th {
+	color: #fff;
+	font-size: 14px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	background: #e14817;
+	padding: 12px 0;
+	font-weight: normal;
+}
+
+#l2 th.name,
+#l2 td.name {
+	text-align: left;
+}
+
+#l2 td {
+	font-size: 13px;
+	font-family: 'Russo One', sans-serif;
+	padding: 5px 0;
+	border-bottom: 1px solid #e14817;
+}
+
+#l2 td.name {
+	padding-left: 10px;
+	font-size: 10px;
+	color: #e14817;
+}
+
+#l2 td.name a {
+	color: #271c2a;
+	font-size: 15px;
+}
+
+#l2 td.name small {
+	color: #e14817;
+	font-size: 10px;
+}
+
+#l2 td a:hover {
+	text-decoration: underline;
+}
+
+#l2 td span.l2offline {
+	color: #e14817;
+}
+#l2 td span.l2online {
+	color: #008a01;
+}
+
+#l2button {
+	position: relative;
+	display: inline-block;
+	width: 151px;
+	height: 39px;
+	text-align: center;
+	line-height: 41px;
+	color: #fff;
+	font-size: 11px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	background: url(../images/btn-min.png) no-repeat;
+	margin: 0 -40px;
+	cursor: pointer;
+}
+
+#l2button:hover {
+	-webkit-filter: contrast(155%);
+	-moz-filter: contrast(155%);
+	-o-filter: contrast(155%);
+	filter:contrast(155%);
+}
+/***************************
+* Просмотр персонажа                                      
+****************************/
+#l2char {
+	font-size: 10px;
+	margin: 10px 1px 5px 1px;
+	border: 1px solid rgba(255,255,255,0.1);
+	border-collapse: collapse;
+	background: #fff;
+}
+#l2char b {
+	font-family: 'Russo One', sans-serif;
+	font-weight: normal;
+}
+#l2char tr:first-child th {
+	color: #fff;
+	font-size: 14px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	background: #e14817;
+	padding: 12px 0;
+	font-weight: normal;
+	border-bottom: 1px solid #fff;
+}
+#l2char th {
+	color: #fff;
+	font-size: 14px;
+    text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	background: #e14817;
+	padding: 12px 0;
+	font-weight: normal;
+}
+#l2char td {
+	font-size: 13px;
+	font-family: 'Russo One', sans-serif;
+	padding: 5px 0;
+	border-bottom: 1px solid #e14817;
+	text-align: center;
+}
+#l2char .char {
+	background: #fff;
+	border-right: 1px solid #e14817;
+	border-bottom: 1px solid #e14817;
+	color: #271c2a;
+}
+.invent {
+	background: url('../images/other/line.gif') repeat-y;
+	width: 252px;
+}
+/***************************
+* Оформление инвентаря     
+***************************/
+#l2inventory { 
+	width: 310px; 
+	height: 408px; 
+	margin: 5px;
+	background: url('../images/other/inventory.png'); 
+	vertical-align: top;
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding: 0px;
+	/*padding: 67px 0px 0px 0px;*/
+	border: 1px solid transparent;
+}
+#l2inventory_items {
+	margin: 67px 0px 0px 20px;
+	width: 268px;
+	height: 288px;
+	overflow: auto;
+	position: relative;
+	padding: 1px 0px 0px 2px;
+	background: url(../images/other/line.gif);
+	background-repeat: repeat-y;
+	background-attachment: scroll;
+}
+img.floated {
+	float: left;
+	position: relative;
+	padding: 0px 4px 4px 0px;
+	width: 32px;
+	height: 32px;}
+.clearfloat {
+	clear:both; height:0px;
+	line-height:0px; visibility: hidden;}
+#l2inventory_items .scrollgeneric {
+	line-height: 1px;
+	font-size: 1px;
+	position: absolute;
+	top: 0; 
+	left: 0;}
+#l2inventory_items .vscrollerbase {
+	width: 15px;
+	background-color: white;}
+#l2inventory_items .vscrollerbar {
+	width: 15px;
+	background-color: black;}
+#l2inventory_items .vscrollerbar {
+	background: #99CBCB url(../images/other/basebarcaps.png) -15px 0px repeat-y;}
+#l2inventory_items .vscrollerbar {
+	padding: 15px;
+	z-index: 2;}
+#l2inventory_items .vscrollerbarbeg {
+	background: url(../images/other/basebarcaps.png) -45px 0px no-repeat;
+	width: 15px;
+	height: 15px !important;}
+#l2inventory_items .vscrollerbarend {
+	background: url(../images/other/basebarcaps.png) -45px -30px no-repeat;
+	width: 15px;
+	height: 15px;}
+#l2inventory_items .vscrollerbase {
+	background: #D7EBDF url(../images/other/basebarcaps.png) 0px 0px repeat-y;}
+#l2inventory_items .vscrollerbasebeg {
+	background: url(../images/other/basebarcaps.png) -30px 0px no-repeat;
+	width: 15px;
+	height: 15px !important;}
+#l2inventory_items .vscrollerbaseend {
+	background: url(../images/other/basebarcaps.png) -30px -30px no-repeat;
+	height: 15px;
+	width: 15px;}
+#l2inventory_items .scrollerjogbox:hover {
+	background: #5E828C url(../images/other/basebarcaps.png) -45px -15px;}
+/***************************
+* Оформление paperdoll     
+***************************/
+#l2paperdoll {
+	width: 310px; 
+	height: 291px; 
+	margin: 5px;
+	background: url('../images/other/paperdoll.png'); 
+	vertical-align: top;
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding: 0px;
+	border: 1px solid transparent;
+}
+#l2paperdoll_items {
+	margin: 75px 0px 0px 30px;
+	width: 245px;
+	height: 149px;
+	position: relative;
+}
+#l2paperdoll #item {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	padding: 0px;
+}
+#l2paperdoll .hidden{ 
+	display:none;
+}
+
+#l2paperdoll .lefthair{ 
+	margin-left: 0px;
+	margin-top: 0px;
+}
+#l2paperdoll .helmet{ 
+	margin-left: 39px;
+	margin-top: 0px;
+}
+#l2paperdoll .righthair{ 
+	margin-left: 78px;
+	margin-top: 0px;
+}
+#l2paperdoll .dress{ 
+	margin-left: 0px;
+	margin-top: 38px;
+}
+#l2paperdoll .top{ 
+	margin-left: 39px;
+	margin-top: 38px;
+}
+#l2paperdoll .cloak{ 
+	margin-left: 78px;
+	margin-top: 38px;
+}
+#l2paperdoll .gloves{ 
+	margin-left: 0px;
+	margin-top: 76px;
+}
+#l2paperdoll .lower{ 
+	margin-left: 39px;
+	margin-top: 76px;
+}
+#l2paperdoll .bots{ 
+	margin-left: 78px;
+	margin-top: 76px;
+}
+#l2paperdoll .weapon{ 
+	margin-left: 0px;
+	margin-top: 114px;
+}
+#l2paperdoll .shield{ 
+	margin-left: 78px;
+	margin-top: 114px;
+}
+
+#l2paperdoll .leftearring{ 
+	margin-left: 132px;
+	margin-top: 0px;
+}
+#l2paperdoll .necklace{ 
+	margin-left: 171px;
+	margin-top: 0px;
+}
+#l2paperdoll .rightearring{ 
+	margin-left: 210px;
+	margin-top: 0px;
+}
+#l2paperdoll .leftring{ 
+	margin-left: 132px;
+	margin-top: 38px;
+}
+#l2paperdoll .ring{ 
+	margin-left: 171px;
+	margin-top: 38px;
+}
+#l2paperdoll .rightring{ 
+	margin-left: 210px;
+	margin-top: 38px;
+}
+#l2paperdoll .braslet{
+	margin-left: 132px;
+	margin-top: 90px;
+}
+/***************************
+* l2top.ru bonus
+***************************/
+.voteBlock { padding-bottom: 15px; text-align: left;  width: 350px; margin: 0 auto;}
+#voteTab1 .input { width: 120px; }
+#voteTab1 td {padding: 5px;}
+/***************************
+* la2.mmotop.ru bonus
+***************************/
+.voteBlock2 { padding-bottom: 15px; text-align: left; width: 350px; margin: 0 auto;}
+.voteBlockErr {text-align: center;}
+#voteTab2 .input { width: 120px; }
+#voteTab2 td {padding: 5px;}
+/***************************
+* other
+***************************/
+.title {
+	font-size: 14px;
+	font-family: TimesNewRomanBold;
+	text-align: center;
+}
+
+.regForm {width: 300px; margin: 0 auto;}
+.regForm p {text-align: center; font-size: 13px; font-family: TimesNewRomanBold;}
+.regbutton { outline: none;	margin: 5px; padding: 3px;	background: #333; color: #ffffff; border: none; font-size: 10px; cursor: pointer;}
+.regForm .tdLeft {	text-align: left;	padding: 5px 0px 5px 10px;	width: 60%;	font-family: TimesNewRomanBold;}
+.regForm .tdRight {	text-align: right;	padding: 5px 10px 5px 0px;	width: 40%;}
+
+.repassForm {width: 300px; margin: 0 auto;}
+.repassForm p {text-align: center; font-size: 13px; font-family: TimesNewRomanBold;}
+.repassbutton {outline: none; margin:5px; padding:3px; background: #333; color: #ffffff; border: none; font-size: 10px; cursor: pointer;}
+.repassForm .tdLeft {	text-align: left;	padding: 5px 0px 5px 10px;	width: 60%;	font-family: TimesNewRomanBold;}
+.repassForm .tdRight {	text-align: right;	padding: 5px 10px 5px 0px;	width: 40%;}
+
+#sexsid label {font-family: TimesNewRomanBold;}
+#sexchar label {font-family: TimesNewRomanBold;}
+#changersid label {font-family: TimesNewRomanBold;}
+#changerchar label {font-family: TimesNewRomanBold;}
+
+#swsupport { width: 100%; font-size: 11px; vertical-align: top;	text-align: center;}
+#swsupport th { height: 32px; color: #fff; border-bottom: 2px solid rgba(255,255,255,0.1);}
+#swsupport td {	border-bottom: 1px solid rgba(255,255,255,0.1);	padding: 5px 0px 5px 0px;}
+#swsupport2 { width: 100%; font-size: 11px; vertical-align: top;	text-align: center; border: 1px solid rgba(255,255,255,0.1); }
+#swsupport2 .td1 {border-bottom: 1px solid rgba(255,255,255,0.1);}
+#swsupport2 .td2 {border-bottom: 1px solid rgba(255,255,255,0.1); padding-left: 5px; border-left: 1px dashed;}
+#swsupport2 .trRowA {background: none;}
+#swsupport2 .trRowA2 {padding-left: 5px; border-left: 1px dashed rgba(255,255,255,0.1);}
+hr {
+    border-color: rgba(255,255,255,0.1);
+}
