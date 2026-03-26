@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(68, 75, 87) url('../images/noise.png?2') repeat;
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 13px;
+    color: rgb(94, 100, 116);
+}
+
+#main-wrapper {
+    padding: 70px 0 20px;
+}
+
+.form-box {
+    margin: 0 auto 10px;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    width: 390px;
+    border: 1px solid rgb(31, 33, 47);
+    overflow: hidden;
+}
+
+.box-title {
+    margin: 10px 0 15px;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(119, 125, 140);
+}
+
+.footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dotted rgb(228, 228, 228);
+}
+
+.footer a {
+    color: rgb(38, 114, 236);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(46, 141, 239);
+}
+
+.copyright {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 11px;
+    color: rgb(139, 145, 160);
+}
+
+.copyright a {
+    color: rgb(255, 255, 255);
+}
+
+/* form */
+.field-group {
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.checkboxes-group {
+    position: relative;
+}
+
+.buttons-group {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.field-group > label {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: rgb(64, 64, 64);
+}
+
+.field {
+    padding: 0 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 35px;
+    font-family: inherit;
+    font-size: 14px;
+    border: 1px solid rgb(230, 232, 232);
+    border-radius: 0 0 0 0 !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: text;
+}
+
+.field:hover,
+.field:focus {
+    border-color: rgb(200, 205, 205);
+}
+
+.field::-webkit-input-placeholder {
+    color: rgb(128, 128, 128);
+}
+
+.field:-moz-placeholder {
+    color: rgb(128, 128, 128);
+}
+
+.field.field-error {
+    border-color: rgb(215, 101, 101);
+}
+
+.field.small {
+    width: 30%;
+}
+
+.field.medium {
+    width: 50%;
+}
+
+.input-icon {
+    position: absolute;
+    top: 0; left: 5px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.captcha-image {
+    float: right;
+}
+
+.input-icon + .field {
+    padding-left: 28px;
+}
+
+.forgot-password {
+    position: absolute;
+    top: 10px; right: 10px;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: rgb(64, 64, 64);
+}
+
+input[type='radio'].field {
+    display: none;
+}
+
+input[type='radio'].field + label:not([for='']) {
+    margin-right: 7px;
+    padding: 4px;
+    float: left;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+}
+
+input[type='radio'].field:checked + label:not([for='']) {
+    background-color: rgb(200, 205, 205);
+}
+
+input[type='radio'].field + label:not([for='']) > a {
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+/* checkbox */
+.checkbox {
+    display: none;
+}
+
+.checkbox + label {
+    padding-left: 25px;
+    display: block;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Segoe UI',sans-serif;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(217, 217, 217);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.checkbox + label:hover:before {
+    border-color: rgb(145, 145, 145);;
+}
+
+.checkbox + label:active:before {
+    border-color: rgb(30, 30, 30);
+}
+
+.checkbox:checked + label:before {
+    content: "\e274";
+    font-size: 11px;
+    line-height: 16px;
+    color: rgb(29, 29, 29);
+    text-align: center;
+}
+
+.checkboxes-group a {
+    position: absolute;
+    top: 1px; right: 0;
+    text-decoration: underline;
+    color: inherit;
+    font-size: 12px;
+}
+
+.button {
+    padding: 0 10px;
+    background-color: rgb(238, 238, 238);
+    min-width: 70px;
+    height: 30px;
+    font-size: 13px;
+    color: rgb(85, 85, 85);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.button.blue {
+    background-color: rgb(38, 114, 236);
+    color: rgb(255, 255, 255);
+}
+
+.button.blue:hover {
+    background-color: rgb(46, 141, 239);
+}
+
+.button.green {
+    background-color: rgb(0, 138, 0);
+    color: rgb(255, 255, 255);
+}
+
+.button.green:hover {
+    background-color: rgb(0, 166, 0);
+}
+
+/* alerts */
+.alert {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.08);
+    font-size: 12px;
+    color: rgb(46, 46, 46);
+}
+
+.alert-error,
+.alert-validation {
+    background-color: rgba(215, 101, 101, 0.2);
+}
+
+.alert-success {
+    background-color: rgb(130, 180, 64);
+    color: rgb(255, 255, 255);
+}
+
+/* fieldset */
+#primaryForm fieldset {
+    border: none;
+    border-top: 1px dotted rgb(228, 228, 228);
+}
+
+#primaryForm fieldset:nth-of-type(2) {
+}
+
+#primaryForm fieldset legend {
+    margin-bottom: 10px;
+    padding-right: 10px;
+    height: 20px;
+    line-height: 18px;
+}
