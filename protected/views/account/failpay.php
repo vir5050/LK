@@ -1,0 +1,1 @@
+<?php echo CWidget::create('CMessage', array('warning', 'fail pay'));
