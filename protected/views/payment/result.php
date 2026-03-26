@@ -1,0 +1,1 @@
+<?php exit($this->response);
