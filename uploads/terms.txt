@@ -1,0 +1,9 @@
+<div style="max-height: 150px; width: 200px; overflow-y: auto; overflow-x: hidden;">
+<p>Правила:</p>
+<ol style="list-style-position: inside;">
+<li>Не курить</li>
+<li>Не шуметь</li>
+<li>Не воровать</li>
+</ol>
+править файл /uploads/terms.txt
+</div>
